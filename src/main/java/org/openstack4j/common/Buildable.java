@@ -30,7 +30,7 @@ public interface Buildable<B> {
 		/**
 		 * Creates a Builder using the param M as the default values
 		 *
-		 * @param The Model M
+		 * @param in Model M
 		 * @return Builder
 		 */
 		 T from(M in);

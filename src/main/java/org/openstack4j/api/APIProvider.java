@@ -21,7 +21,7 @@ public interface APIProvider {
 	 * @param <T> the Openstack4j API type
 	 * @param api the API interface
 	 * @return the implementation for T
-	 * @throws ApiNotFoundException if the API cannot be found
+	 * @throws org.openstack4j.api.exceptions.ApiNotFoundException if the API cannot be found
 	 */
 	<T> T get(Class<T> api);
 }
