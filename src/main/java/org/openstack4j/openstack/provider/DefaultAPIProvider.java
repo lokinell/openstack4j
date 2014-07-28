@@ -10,6 +10,7 @@ import org.openstack4j.api.networking.*;
 import org.openstack4j.api.storage.BlockStorageService;
 import org.openstack4j.api.storage.BlockVolumeService;
 import org.openstack4j.api.storage.BlockVolumeSnapshotService;
+import org.openstack4j.api.telemetry.CollectorService;
 import org.openstack4j.api.telemetry.MeterService;
 import org.openstack4j.api.telemetry.TelemetryService;
 import org.openstack4j.openstack.compute.internal.*;
@@ -19,6 +20,7 @@ import org.openstack4j.openstack.networking.internal.*;
 import org.openstack4j.openstack.storage.block.internal.BlockStorageServiceImpl;
 import org.openstack4j.openstack.storage.block.internal.BlockVolumeServiceImpl;
 import org.openstack4j.openstack.storage.block.internal.BlockVolumeSnapshotServiceImpl;
+import org.openstack4j.openstack.telemetry.internal.CollectorServiceImpl;
 import org.openstack4j.openstack.telemetry.internal.MeterServiceImpl;
 import org.openstack4j.openstack.telemetry.internal.TelemetryServiceImpl;
 
@@ -66,6 +68,7 @@ public class DefaultAPIProvider implements APIProvider {
         bind(SecurityGroupRuleService.class, SecurityGroupRuleServiceImpl.class);
         bind(TelemetryService.class, TelemetryServiceImpl.class);
         bind(MeterService.class, MeterServiceImpl.class);
+        bind(CollectorService.class, CollectorServiceImpl.class);
     }
 
     /**

@@ -15,5 +15,8 @@ public interface TelemetryService extends RestService {
 	  * @return the Meter Service API
 	  */
    MeterService meters();
+
+   CollectorService collectors();
+
 	
 }
